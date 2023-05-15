@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+/*  Allowing for the background to be more smooth transitioning*/
+.background{ 
+    width: 100%;
+    height: 100vh;  
+    background-image:linear-gradient(rgba(20, 20, 20, 0.75),rgba(20, 20, 20, 0.75)), url(../images/BackgroundPhoto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* House on the top corner for the use to easily nagivate*/
+.logo{
+    width: 120px;
+    padding-top: 20px;
+    padding-right: 20px;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* Hover feater*/
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    transition: 1s;
+}
+/* Hover feature*/   
+nav ul li:hover::after{
+    width: 100%
+}
+.content{ 
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    transform:translateY(-50%);
+    text-align: center;
+    color: #fff;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-left: 35%;
+    margin-right: 35%;
+    line-height: 20px;
+}
+input{
+    height: 30px;
+}
+
