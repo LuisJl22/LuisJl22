@@ -20,7 +20,7 @@ nav{
     justify-content: space-between;
 }
 .logo{
-    width: 120px;
+    width: 100px;
     
 }
 nav ul li{
@@ -50,24 +50,34 @@ nav ul li:hover::after{
 .content{
     width: 100%;
     position: absolute;
-    top: 15%;
+    top: 35%;
     transform:translateY(-50%);
     text-align: center;
     color: #fff;
     margin: auto;
     
 }
-.content h1{
-    padding-top: 200px;
-    font-size:50px;
-    margin-top: 90px;
+.content h2{
+    padding-top: 60px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    
+    
 }
 .content p{
     display: flex;
     align-content: flex-start;
     margin:20px;
     font-weight: 100;
-    bottom: 30%;
+    bottom: 0%;
     line-height: 1;
     text-align: justify;    
+}
+.work{
+    margin: 50px;
+}
+
+.content li {
+    margin: 10px;
+   
 }
